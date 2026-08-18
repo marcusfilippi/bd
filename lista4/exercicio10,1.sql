@@ -1,22 +1,22 @@
 --1
 
 insert into `cliente`(`cpf`,`nome`,`telefone`)
-values ('111.111.111-11', 'João da Silva', `48991234567`);
+values ('111.111.111-11', 'João da Silva', '48991234567');
 
 --2
 
 insert into `cliente`(`cpf`,`nome`,`telefone`)
-values ('222.222.222-22', 'Maria Oliveira', `48997654321`);
+values ('222.222.222-22', 'Maria Oliveira', '48997654321');
 
 --3
 
 insert into `empregado`(`cpf`,`nome`,`cargo`)
-values ('333.333.333-33', 'Carlos Pereira', `Analista de Sistemas`);
+values ('333.333.333-33', 'Carlos Pereira', 'Analista de Sistemas');
 
 --4
 
 insert into `empregado`(`cpf`,`nome`,`cargo`)
-values ('444.444.444-44', 'Ana Souza', `Gerente de Projetos`);
+values ('444.444.444-44', 'Ana Souza', 'Gerente de Projetos');
 
 --5
 
@@ -46,12 +46,12 @@ values ('2', '333.333.333-33', '35');
 --10
 
 insert into `cliente`(`cpf`,`nome`,`telefone`)
-values ('555.555.555-55', 'Pedro Gomes', `48999887766`);
+values ('555.555.555-55', 'Pedro Gomes', '48999887766');
 
 --11
 
 insert into `empregado`(`cpf`,`nome`,`cargo`)
-values ('666.666.666-66', 'Lucas Andrade', `Desenvolvedor Backend`);
+values ('666.666.666-66', 'Lucas Andrade', 'Desenvolvedor Backend');
 
 --12
 
@@ -66,7 +66,7 @@ values ('3', '666.666.666-66', '50');
 --14
 
 insert into `cliente`(`cpf`,`nome`,`telefone`)
-values ('777.777.777-77', 'Fernanda Lima', `48991231231`);
+values ('777.777.777-77', 'Fernanda Lima', '48991231231');
 
 --15
 
