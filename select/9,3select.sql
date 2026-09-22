@@ -83,7 +83,7 @@ where `cidade` in ('Belo Horizonte', 'Florianópolis', 'Porto Alegre');
 
 select `Animais` . `nome`, `Consultas` . `custo` from `Animais`
 inner join `Consultas` on `Animais`.`idAnimal` = `Consultas` . `idAnimal_fk`
-where `custo` between 100 and 200
+where `custo` between 100 and 200;
 
 -- 19
 
