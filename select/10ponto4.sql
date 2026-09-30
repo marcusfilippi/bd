@@ -89,4 +89,16 @@ select `motivo` as 'Motivo',
 `custo` as 'Valor'
 from `Consultas` order by `custo` desc limit 0,1;
 
---
+-- 19
+
+select `nome` as 'Nome',
+`especie` as 'Espécie',
+`dtNascimento` as 'Nascimento'
+from `Animais` order by `dtNascimento` desc limit 0,3;
+
+-- 20
+
+select `dtConsulta` as 'Data',
+`motivo` as 'Motivo'
+from `Consultas` order by `dtConsulta` asc limit 0,2;
+
