@@ -33,3 +33,13 @@ where `C`.`nome` = 'Notebooks';
 
 -- 4 
 
+SELECT
+ `A`.`nome` AS 'Produto',
+ `A`.`preco` AS 'Preço Produto',
+ `C`.`nome` AS 'Categoria'
+FROM
+ `produtos` as `A`
+INNER join
+`categorias` as `C` on `A`.`idCategoria_fk` = `C`.`idCategoria`
+where `A`.`preco` > 2000;
+
