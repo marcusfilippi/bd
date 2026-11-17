@@ -141,15 +141,41 @@ values
 (9, 'Conexão', 'Dispositivo de Miguel reconectado.', '2026-11-14 14:00:00', 'Lida', 201, 2),
 (10, 'Localização', 'Gabriel chegou em casa.', '2026-11-14 15:00:00', 'Enviada', 302, 3);
 
-select from `criancas`
+-- select para ver as crianças do responsavel 3
+select *  from `crianca`
 where `id_responsavel` = 3;
 
-select from `dispositivos`
-where `id_crianca` = null;
+-- select para ver os dispositivos usados pelos adultos 
+select * from `dispositivo`
+where `id_crianca` is null;
 
-select from `notificacao`
+-- mostrar apenas as notificações relacionadas a pareamento/conexão
+select * from `notificacao`
 where `tipo` = 'Conexão';
 
-select from `pareamento`
+-- mostrar apenas os pareamentos conectados por bluetooth
+select * from `pareamento`
 where `tipo_conexao` = 'Bluetooth' and `status` = 'Conectado';
 
+-- mostrar apenas as localizações antes das 10 horas
+select * from `notificacao`
+where `data_hora` < '2026-11-14 10:00:00'
+
+
+-- select para mostrar os pareamentos mostrando os dispositivos no pareamento inner join
+select
+ `A`.`id_pareamento` as 'Pareamento',
+ `A`.`data_hora` as 'Data e Hora',
+ `C`. `nome` as 'Dispositivo da Criança Pareado'
+from
+ `pareamento` as `A`
+inner join
+`dispositivo` as `C` on `A`.`id_dispositivo_crianca` = `C`.`id_dispositivo`;
+
+-- select para mostrar o responsavel e suas crianças inner join
+select
+ `A`. 
+
+-- select a localização da criança mostrando o nome da criança inner join
+
+-- 
