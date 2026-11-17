@@ -140,3 +140,16 @@ values
 (8, 'Segurança', 'Lucas saiu da área segura.', '2026-11-14 13:00:00', 'Pendente', 101, 1),
 (9, 'Conexão', 'Dispositivo de Miguel reconectado.', '2026-11-14 14:00:00', 'Lida', 201, 2),
 (10, 'Localização', 'Gabriel chegou em casa.', '2026-11-14 15:00:00', 'Enviada', 302, 3);
+
+select from `criancas`
+where `id_responsavel` = 3;
+
+select from `dispositivos`
+where `id_crianca` = null;
+
+select from `notificacao`
+where `tipo` = 'Conexão';
+
+select from `pareamento`
+where `tipo_conexao` = 'Bluetooth' and `status` = 'Conectado';
+
